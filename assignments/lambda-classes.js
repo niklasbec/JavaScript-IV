@@ -75,69 +75,71 @@ class Managers extends Instructors{
 //Instructors
 
 const jake = new Instructors ({
-    name = 'Jake',
-    country = 'England',
-    age = 25,
-    wage = 50000,
-    contracttimeYears = 4,
-    speciality = 'Vue.js',
-    favLanguage = 'JS',
-    catchPhrase = 'Dont forget the homies'
+    name: 'Jake',
+    country: 'England',
+    age: 25,
+    wage: 50000,
+    contracttimeYears: 4,
+    speciality: 'Vue.js',
+    favLanguage: 'JS',
+    catchPhrase: 'Dont forget the homies'
 })
 
 const mike = new Instructors ({
-    name = 'Mike',
-    country = 'England',
-    age = 28,
-    wage = 55000,
-    contracttimeYears = 2,
-    speciality = 'React.js',
-    favLanguage = 'JS',
-    catchPhrase = 'Suh dude'
+    name: 'Mike',
+    country: 'England',
+    age: 28,
+    wage: 55000,
+    contracttimeYears: 2,
+    speciality: 'React.js',
+    favLanguage: 'JS',
+    catchPhrase: 'Suh dude'
 })
 
 //Students
 
 const niklas = new Students ({
-    name = 'Niklas',
-    country = 'Germany',
-    age = 23,
-    isaCost = 27500,
-    status = 'not graduated',
-    previousBackground = 'Student of Economics',
-    className = 'Web EU4',
-    favSubjects = ['Vue.js', 'CSS']
+    name: 'Niklas',
+    country: 'Germany',
+    age: 23,
+    isaCost: 27500,
+    status: 'not graduated',
+    previousBackground: 'Student of Economics',
+    className: 'Web EU4',
+    favSubjects: ['Vue.js', 'CSS']
 })
 
+console.log(niklas.payOffIsa(2000));
+
 const emma = new Students ({
-    name = 'Emma',
-    country = 'England',
-    age = 29,
-    isaCost = 27500,
-    status = 'not graduated',
-    previousBackground = 'Teacher',
-    className = 'Web EU4',
-    favSubjects = ['Foor Loops', 'For Loops']
+    name: 'Emma',
+    country: 'England',
+    age: 29,
+    isaCost: 27500,
+    status: 'not graduated',
+    previousBackground: 'Teacher',
+    className: 'Web EU4',
+    favSubjects: ['Foor Loops', 'For Loops']
 })
 
 //Managers
 
 const austen = new Managers ({
-    name = 'Austen',
-    country = 'USA',
-    age = 30,
-    wage = 200000,
-    contracttimeYears = 20,
-    gradClassName = 'None',
-    favInstructor = 'Alex'
+    name: 'Austen',
+    country: 'USA',
+    age: 30,
+    wage: 200000,
+    contracttimeYears: 20,
+    gradClassName: 'None',
+    favInstructor: 'Alex'
 })
 
 const matt = new Managers ({
-    name = 'Matt',
-    country = 'Germany',
-    age = 36,
-    wage = 60000,
-    contracttimeYears = 5,
-    gradClassName = 'Unknown',
-    favInstructor = 'Alex'
+    name: 'Matt',
+    country: 'Germany',
+    age: 36,
+    wage: 60000,
+    contracttimeYears: 5,
+    gradClassName: 'Unknown',
+    favInstructor: 'Alex'
 })
