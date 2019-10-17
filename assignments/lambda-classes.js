@@ -8,7 +8,7 @@ class Person {
         this.age = attributes.age;
     }
     speak () {
-        return `Hello my name is ${this.name}, I am from ${country}.`
+        return `Hello my name is ${this.name}, I am from ${this.country}.`
     }
 }
 
@@ -46,7 +46,7 @@ class Students extends Person{
         return `${this.isaCost} left to pay!`
     }
     listsSubjects () {
-        for (i = 0; i < this.favSubjects; i++) {
+        for (let i = 0; i < this.favSubjects; i++) {
             console.log(this.favSubjects[i])
         }
     }
@@ -65,7 +65,7 @@ class Managers extends Instructors{
     this.favInstructor = attributes.favInstructor;
     }
     standUp (slackChannel) {
-        return `${slackChannel.name} announces to ${slackChannel.channelName}, @channel standy times!`
+        return `${this.name} announces to ${slackChannel.channelName}, @channel standy times!`
     }
     debugsCode (student, subject) {
         return `${this.name} debugs ${student.name}'s code on ${subject}`
@@ -84,6 +84,7 @@ const jake = new Instructors ({
     favLanguage: 'JS',
     catchPhrase: 'Dont forget the homies'
 })
+
 
 const mike = new Instructors ({
     name: 'Mike',
@@ -109,7 +110,6 @@ const niklas = new Students ({
     favSubjects: ['Vue.js', 'CSS']
 })
 
-console.log(niklas.payOffIsa(2000));
 
 const emma = new Students ({
     name: 'Emma',
@@ -143,3 +143,19 @@ const matt = new Managers ({
     gradClassName: 'Unknown',
     favInstructor: 'Alex'
 })
+
+//function calls
+
+slackChannel = {
+    channelName: 'Web EU 4'
+}
+
+niklas.graduate()
+console.log(niklas.payOffIsa(2000));
+console.log(niklas.speak())
+console.log(niklas.PRAssignment('JS'));
+console.log(jake.grade(niklas, 'JS'));
+console.log(niklas.sprintChallenge('JS'));
+console.log(austen.debugsCode(niklas, 'JS'));
+console.log(austen.standUp(slackChannel));
+console.log(jake.demo('JS'));
